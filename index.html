@@ -36,11 +36,11 @@
       id="sideNav"
     >
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Min Ji</span>
+        <span class="d-block d-lg-none">Hello I am Minji</span>
         <span class="d-none d-lg-block"
           ><img
             class="img-fluid img-profile rounded-circle mx-auto mb-2"
-            src="assets/img/profile.jpg"
+            src="assets/img/profile.png"
             alt="..."
         /></span>
       </a>
@@ -78,16 +78,21 @@
               >Certifications</a
             >
           </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact"
+              >Contact</a
+            >
+          </li>
         </ul>
       </div>
     </nav>
     <!-- Page Content-->
     <div class="container-fluid p-0">
-      <!-- About-->
+      <!--------------- About --------------->
       <section class="resume-section" id="about">
         <div class="resume-section-content">
           <h1 class="mb-0">
-            <span class="text-primary">MIN JI</span>
+            <span id="about-name">MIN JI</span>
             KIM
           </h1>
           <div class="subheading mb-5">
@@ -116,11 +121,13 @@
             <a class="social-icon" href="https://github.com/brocoli05"
               ><i class="fab fa-github"></i
             ></a>
-          </div>
+            <a class="social-icon" href="./images/Minji Kim.pdf" download><i class="fa-regular fa-file-pdf"></i></a
+            >
+          </div>          
         </div>
       </section>
       <hr class="m-0" />
-      <!-- Skills-->
+      <!--------------- Skills --------------->
       <section class="resume-section" id="skills">
         <div class="resume-section-content">
           <h2 class="mb-5">Skills</h2>
@@ -160,7 +167,7 @@
         </div>
       </section>
       <hr class="m-0" />
-      <!-- Experience-->
+      <!--------------- Experience --------------->
       <section class="resume-section" id="experience">
         <div class="resume-section-content">
           <h2 class="mb-5">Experience</h2>
@@ -296,7 +303,7 @@
         </div>
       </section>
       <hr class="m-0" />
-      <!-- Education-->
+      <!--------------- Education --------------->
       <section class="resume-section" id="education">
         <div class="resume-section-content">
           <h2 class="mb-5">Education</h2>
@@ -304,7 +311,7 @@
             class="d-flex flex-column flex-md-row justify-content-between mb-5"
           >
             <div class="flex-grow-1">
-              <h3 class="mb-0">
+              <h4 class="mb-0">
                 Advanced Diploma of Computer Programming & Analysis
               </h3>
               <div class="subheading mb-3">
@@ -331,7 +338,7 @@
           </div>
           <div class="d-flex flex-column flex-md-row justify-content-between">
             <div class="flex-grow-1">
-              <h3 class="mb-0">
+              <h4 class="mb-0">
                 Bachelor of Chinese Literature and Business Administration
               </h3>
               <div class="subheading mb-3">
@@ -345,19 +352,51 @@
         </div>
       </section>
       <hr class="m-0" />
-      <!-- Awards-->
+      <!--------------- Awards --------------->
       <section class="resume-section" id="certi">
         <div class="resume-section-content">
           <h2 class="mb-5">Awards & Certifications</h2>
           <ul class="fa-ul mb-0">
             <li>
               <span class="fa-li"
-                ><i class="fas fa-trophy text-warning"></i
-              ></span>
+                ><i class="fa-solid fa-award text-warning"></i></span>
+              President's Honour List : 1st Semester for Winter 2023 Term
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fa-solid fa-award text-warning"></i></i></span>
+              President's Honour List : 2nd Semester for Summer 2023 Term
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i></span>
               SAS Certified Specialist: Base Programming Using SAS 9.4
             </li>
           </ul>
         </div>
+      </section>
+      <hr class="m-0" />
+      <!--------------- Contact --------------->
+      <section class="resume-section" id="contact">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Contact Me</h2>
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Message"
+            ></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+        
       </section>
     </div>
     <!-- Bootstrap core JS-->

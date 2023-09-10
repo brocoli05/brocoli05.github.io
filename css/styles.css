@@ -8076,6 +8076,7 @@ fieldset:disabled .btn {
 
 /* rtl:end:remove */
 .text-primary {
+  font-weight: 600;
   --bs-text-opacity: 1;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
@@ -11794,4 +11795,57 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+/************** Contact ***************/
+#msg {
+  color: #61b752;
+  margin-top: -30px;
+  display: block;
+}
+
+form {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #fff3e0;
+  padding: 15px;
+  margin: 15px 0;
+  color: #565e64;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 2px solid #ffc107;
+  padding: 14px 50px;
+  border-radius: 6px;
+  color: #bd5d38;
+  text-decoration: none;
+  transition: background 0.5s;
+}
+
+.btn:hover {
+  background: #bd5d38;
+  color: #fff;
+  border: 0;
+}
+
+form .btn.btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#about-name{
+  color: #bd5d38;
 }
