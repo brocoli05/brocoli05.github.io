@@ -16,7 +16,7 @@
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
-  --bs-orange: #bd5d38;
+  --bs-orange: #ffecd9;
   --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
@@ -33,7 +33,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #bd5d38;
+  --bs-primary: #ffecd9;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -269,7 +269,7 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  color: #ee786e;
   text-decoration: underline;
 }
 a:hover {
@@ -11825,17 +11825,17 @@ form textarea {
   display: block;
   margin: 50px auto;
   width: fit-content;
-  border: 2px solid #ffc107;
+  border: 2px solid #ee786e;
   padding: 14px 50px;
   border-radius: 6px;
-  color: #bd5d38;
+  color: #ee786e;
+  font-weight: bold;
   text-decoration: none;
-  transition: background 0.5s;
 }
 
 .btn:hover {
   background: #bd5d38;
-  color: #fff;
+  color: #ffecd9;
   border: 0;
 }
 
@@ -11846,6 +11846,78 @@ form .btn.btn2 {
   cursor: pointer;
 }
 
-#about-name{
+#about-name {
   color: #bd5d38;
+}
+
+/************** Project ***************/
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+}
+
+.project {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  height: 40vh;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s; /* zoom-in */
+}
+
+.layer {
+  width: 100%;
+  height: 0; /* The content is hidden */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #bd5d38);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s; /* The text will show up when hovering */
+}
+
+.layer h3 {
+  font-weight: bold;
+  color: #ee786e;
+  margin-bottom: 20px;
+}
+.layer p {
+  color: #e6d4cc;
+}
+
+.layer a {
+  margin-top: 20px;
+  /* color: #ff004f; */
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #e6d4cc;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.project:hover img {
+  transform: scale(1.1); /* zoom-in */
+}
+
+.project:hover .layer {
+  /* text is coming up */
+  height: 100%;
 }
